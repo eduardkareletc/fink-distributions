@@ -1,7 +1,7 @@
 Info2: <<
 Package:  wget%type_pkg[-gnutls]%type_pkg[-idn]
 Version: 1.20.1
-Revision: 2
+Revision: 3
 Type: -gnutls (boolean), -idn (boolean)
 Description: Automatic web site retriever (SSL)
 Conflicts: <<
@@ -32,6 +32,7 @@ BuildDepends: <<
 	libunistring2,
 	pkgconfig,
 	( %type_raw[-gnutls] = . )		 	openssl110-dev,
+	( %type_raw[-gnutls] = . )		 	openssl1,
 	( %type_raw[-gnutls] = -gnutls )	gnutls28,
 	( %type_raw[-gnutls] = -gnutls )	nettle4a,
 	( %type_raw[-idn] = -idn )			libidn2.0-dev
